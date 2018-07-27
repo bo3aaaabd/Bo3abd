@@ -20,14 +20,7 @@ console.log(`[M] ${client.users.size}`)
 
 
 
-
-
-
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
-});
-
-const automsg = ['**Welcome to The Miracle**', '``Welcome to The Miracle``', 'Welcome to The Miracle :ultrafastpartyparrot: ', 'Welcome to The Miracle :partyparrot: ', '__Welcome to The Miracle__', 'Welcome to The Miracle^.^', 'Welcome to The Miracle'];
+const automsg = ['**Welcome to The Miracle**', '``Welcome to The Miracle``', '**Welcome to The Miracle+** ', '**Welcome to The Miracle-** ', '__Welcome to The Miracle__', 'Welcome to The Miracle^.^', 'Welcome to The Miracle'];
 client.on('guildMemberAdd', member => {
 
 if (member.guild.id === "426097965703233536") {
