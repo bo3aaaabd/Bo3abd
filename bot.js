@@ -37,6 +37,25 @@ if (member.guild.id === "426097965703233536") {
 
 
 
+const bo = ['472052319006228509'];   
+client.on('message', message => {
+   var argresult = message.content.split(` `).slice(1).join(' ');
+    if (!bo.includes(message.author.id)) return;
+  if (!message.guild) return;
+
+  if (message.content === 'join') {
+    // Only try to join the sender's voice channel if they are in one themselves
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel.join()
+        .then(connection => { // Connection is an instance of VoiceConnection
+          message.reply(':ok:');
+        })
+        .catch(console.log);
+    } else {
+      message.reply('no ');
+    }
+  }
+});
 
 
 
