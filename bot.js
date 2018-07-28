@@ -36,11 +36,8 @@ if (member.guild.id === "426097965703233536") {
 
 
 
-
-const bo = ['472052319006228509'];   
+  
 client.on('message', message => {
-   var argresult = message.content.split(` `).slice(1).join(' ');
-    if (!bo.includes(message.author.id)) return;
   if (!message.guild) return;
 
   if (message.content === 'join') {
