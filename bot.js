@@ -40,7 +40,7 @@ if (member.guild.id === "426097965703233536") {
 client.on('message', message => {
   if (!message.guild) return;
 
-  if (message.content === 'join') {
+  if (message.content === 'mrbo3abDjoin') {
     // Only try to join the sender's voice channel if they are in one themselves
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
